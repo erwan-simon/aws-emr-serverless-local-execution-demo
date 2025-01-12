@@ -1,0 +1,5 @@
+.terraform/
+__pycache__/
+.ipynb_checkpoints/
+logs/
+login_error_message.txt

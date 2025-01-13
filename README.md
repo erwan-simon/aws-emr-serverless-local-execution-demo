@@ -8,7 +8,7 @@ This repository aims to demonstrate the usage of an EMR Serverless Docker image 
 * Terraform (tested with version `v1.5.7`)
 * AWS CLI (tested with version `2.22.23`)
 * an AWS account with working credentials and relevant permissions
-* A deployed network stack on an AWS account (a VPC with at least one private subnet with access to internet, or with relevant VPC endpoints set up)
+* A deployed network stack on an AWS account (a VPC with at least one private subnet with access to internet, or with relevant VPC endpoints set up). You will find an example [in this github repository](https://github.com/erwan-simon/aws-network-stack)
 
 ## Repository content
 

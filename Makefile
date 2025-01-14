@@ -11,7 +11,7 @@ build_docker_image:
 CREDENTIALS = $(shell aws configure export-credentials)
 ACCESS_KEY = $(shell echo '$(CREDENTIALS)' | jq -r '.AccessKeyId')
 SECRET_KEY = $(shell echo '$(CREDENTIALS)' | jq -r '.SecretAccessKey')
-SESSION_TOKEN = $(shell echo '$(CREDENTIALS)' | jq -r '.SessionToken')
+SESSION_TOKEN = $(shell echo '$(CREDENTIALS)' | jq -r '.SessionToken // ""')
 
 SPARK_SUBMIT_PARAMETERS = \
 		--conf spark.hadoop.fs.s3a.endpoint=s3.$(AWS_REGION).amazonaws.com \
